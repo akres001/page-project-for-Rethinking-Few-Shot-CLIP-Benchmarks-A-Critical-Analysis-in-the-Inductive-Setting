@@ -7,7 +7,7 @@
 
 # Site settings
 title: Rethinking-Few-Shot-CLIP-Benchmarks-A-Critical-Analysis-in-the-Inductive-Setting (ICCV2025) 
-css: /css/paper.scss
+# css: /css/paper.scss
 email: ak3095@bath.ac.uk
 description: > # this means to ignore newlines until "baseurl:"
   Project page for Rethinking-Few-Shot-CLIP-Benchmarks-A-Critical-Analysis-in-the-Inductive-Setting paper

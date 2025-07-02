@@ -1,6 +1,6 @@
 ---
 layout: paper
-title:  "[ICCV 2025] Rethinking-Few-Shot-CLIP-Benchmarks-A-Critical-Analysis-in-the-Inductive-Setting"
+title:  "[ICCV 2025] Rethinking Few Shot CLIP Benchmarks: A Critical Analysis in the Inductive Setting"
 date: 2025-07-02 21:00:00
 author_list:
   - name: "Alexey Kravets"
