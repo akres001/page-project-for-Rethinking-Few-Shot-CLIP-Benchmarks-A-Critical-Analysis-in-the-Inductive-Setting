@@ -1,0 +1,97 @@
+- name: Yuguang (Tony) Yao
+  photo: yuguang.png
+  info: Graduate student, Computer Science, Michigan State University (Spring 2021 - current)
+  email: yaoyugua@msu.edu
+  url: https://www.cse.msu.edu/~yaoyugua/
+  education:
+    - B.Eng., Automation, Tsinghua University, China
+
+- name: Yimeng (Damon) Zhang
+  photo: yimeng.png
+  info: Graduate student, Computer Science, Michigan State University (Spring 2021 - current)
+  email: zhan1853@msu.edu
+  url: https://damon-demon.github.io/
+  education:
+    - M.S., Electrical Engineering, Columbia University, United States
+    - B.Eng., Electrical and Electronic Engineering, University of Sheffield, United Kingdom
+
+- name: Jinghan Jia
+  photo: jinghan.png
+  info: Graduate student, Computer Science, Michigan State University (Fall 2021 - current)
+  email: jiajingh@msu.edu
+  url: https://jinghanjia.netlify.app/
+  education:
+    - M.S., Electrical and Computer Engineering, University of Florida, United States
+    - B.Eng., Computer Science, University of Science and Technology of China, China
+
+- name: Yihua Zhang
+  photo: yihua.png
+  info: Graduate student, Computer Science, Michigan State University (Spring 2022 - current)
+  email: zhan1908@msu.edu
+  url: https://www.yihua-zhang.com
+  education:
+    - B.Eng., Mechanical Engineering, Huazhong University of Science and Technology, China
+
+- name: Chongyu Fan
+  photo: chongyu.png
+  info: Graduate Student, Computer Science, Michigan State University (Fall 2024 - current)
+  email: fanchon2@msu.edu
+  url: https://chongyu-fan.netlify.app
+  education:
+    - B.Eng., Mechanical Engineering, Huazhong University of Science and Technology, China
+
+- name: Changsheng Wang
+  photo: changsheng.png
+  info: Graduate Student, Computer Science, Michigan State University (Fall 2024 - current)
+  email: wangc168@msu.edu
+  url: https://x.com/wcsa23187
+  education:
+    - B.Eng., Data Science, University of Science and Technology of China, China
+
+- name: Yiwei Chen
+  photo: yiwei.png
+  info: Graduate Student, Computer Science, Michigan State University (Fall 2024 - current)
+  email: chenyiw9@msu.edu
+  url: https://yiwei-chenn.github.io/
+  education:
+    - M.S., Computer Science, Xi'an Jiaotong University, China
+    - B.Eng., Automation, Young Gifted Class, Xi'an Jiaotong University, China
+
+- name: Soumyadeep Pal
+  photo: soumyadeep.png
+  info: Graduate Student, Computer Science, Michigan State University (Fall 2024 - current)
+  email: palsoum1@msu.edu
+  url: https://scholar.google.ca/citations?user=c2VU-_4AAAAJ&hl=en
+  education:
+    - M.S.(Thesis), Computer Science, University of Alberta, Canada
+    - B.Eng., Electrical Engineering, Jadavpur University, India
+
+- name: Bingqi Shang
+  photo: bingqi.jpg
+  info: Graduate Student, Computer Science, Michigan State University (Fall 2025 - current)
+  email: shangbin@msu.edu
+  url: https://bio.bingqi-shang.com/
+  education:
+    - M.S., Computer Science, Northwestern University, USA
+    - B.Eng., Software Engineering, Tongji University, China
+
+- name: Yancheng Huang
+  photo: yancheng.png
+  info: Graduate Student, Computer Science, Michigan State University (Fall 2025 - current)
+  email: huang341@msu.edu
+  url: 
+  education:
+    - M.S., Computer Science, Tongji University, China
+
+
+- name: "Changchang Sun (Visiting)"
+  photo: changchang.png
+  email: sunchan5@msu.edu
+  info: Ph.D. student, Department of Computer Science, University of Illinois Chicago (Aug. 2023 - Present)
+  url: https://scholar.google.com/citations?user=bCxWjjYAAAAJ&hl=en
+  education:
+
+
+
+
+
