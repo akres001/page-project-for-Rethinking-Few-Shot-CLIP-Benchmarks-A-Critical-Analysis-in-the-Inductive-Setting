@@ -6,12 +6,12 @@ sitemap: false
 permalink: /posts
 ---
 
-# Group Projects Highlights
+<!-- # Group Projects Highlights
 
 Authors marked in <span style="color:blue">blue</span> indicate our group members, and "\*" indicates equal contribution.<br />
 
-{% assign temp_pubs = site.data.publications.preprints | concat: site.data.publications.conferences %}
-{% assign all_pubs = temp_pubs | concat: site.data.publications.journals %}
+<!-- {% assign temp_pubs = site.data.publications.preprints | concat: site.data.publications.conferences %} -->
+<!-- {% assign all_pubs = temp_pubs | concat: site.data.publications.journals %} -->
 
 {% assign number_printed = 0 %}
 
@@ -50,4 +50,4 @@ Authors marked in <span style="color:blue">blue</span> indicate our group member
 {% if even_odd == 1 %}
 </div>
 {% endif %}
-
+ -->
