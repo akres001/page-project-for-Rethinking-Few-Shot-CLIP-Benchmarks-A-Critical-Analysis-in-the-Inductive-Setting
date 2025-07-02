@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReflectiVA (CVPR 2025)</title>
+    <title>Rethinking Few Shot CLIP Benchmarks: A Critical Analysis in the Inductive Setting (ICCV 2025)</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -616,44 +616,28 @@
                         <img src="static/paper/cvpr2025.png" alt="CVPR Logo" class="cvpr-logo">
 
                         <div class="main-title-container">
-                            <img src="static/paper//logoReflectiVA.png" alt="ReflectiVA Logo" class="project-logo">
-                            <h1 class="main-title">Augmenting Multimodal LLMs with <br>
-                                Self-Reflective Tokens for Knowledge-based <br>
-                                Visual Question Answering</h1>
+                            <img src="static/iccv2025.svg" alt="ICCV Logo" class="project-logo">
+                            <h1 class="main-title">Rethinking Few Shot CLIP Benchmarks: A Critical Analysis in the Inductive Setting</h1>
                         </div>
                         <div class="authors-container">
                             <div class="authors-row">
                                 <span class="author-badge me-2">
-                                    <img src="static/authors/FedericoCocchi.jpg" alt="Federico Cocchi" class="author-photo">
-                                    <a href="https://federico1-creator.github.io/Federico_Cocchi/" target="_blank">
-                                    Federico Cocchi</a> <span class="equal-contrib">*</span>
+                                    <!-- <a href="https://https://github.com/akres001/" target="_blank"> -->
+                                    Alexey Kravets</a>
                                 </span>
                                 <span class="author-badge">
-                                    <img src="static/authors/NicholasMoratelli.png" alt="Nicholas Moratelli" class="author-photo">
+<!--                                     <img src="static/authors/NicholasMoratelli.png" alt="Nicholas Moratelli" class="author-photo">
                                     <a href="https://nicholasmoratelli.github.io/" target="_blank">
-                                    Nicholas Moratelli</a> <span class="equal-contrib">*</span>
-                                </span>
-                            </div>
-                            <div class="authors-row">
-                                <span class="author-badge me-2">
-                                    <img src="static/authors/MarcellaCornia.png" alt="Marcella Cornia" class="author-photo">
-                                    <a href="https://personale.unimore.it/rubrica/dettaglio/marcella.cornia" target="_blank">
-                                    Marcella Cornia</a>
-                                </span>
-                                <span class="author-badge me-2">
-                                    <img src="static/authors/LorenzoBaraldi.png" alt="Lorenzo Baraldi" class="author-photo">
-                                    <a href="https://www.lorenzobaraldi.com" target="_blank">
-                                    Lorenzo Baraldi</a>
+ -->                                Da Chen
                                 </span>
                                 <span class="author-badge">
-                                    <img src="static/authors/RitaCucchiara.png" alt="Rita Cucchiara" class="author-photo">
-                                    <a href="https://personale.unimore.it/rubrica/dettaglio/cucchiara" target="_blank">
-                                    Rita Cucchiara</a>
+<!--                                     <img src="static/authors/NicholasMoratelli.png" alt="Nicholas Moratelli" class="author-photo">
+                                    <a href="https://nicholasmoratelli.github.io/" target="_blank">
+ -->                                Vinay P. Namboodiri
                                 </span>
                             </div>
                         </div>
-                        <p class="equal-contrib-note">* Equal contribution</p>
-                        <p class="cvpr-year mt-4">CVPR 2025</p>
+                        <p class="iccv-year mt-4">ICCV 2025</p>
                     </div>
 
                     <div class="resources-section mt-4 text-center animate-on-scroll">
@@ -661,7 +645,7 @@
                             style="font-family: 'Exo 2', sans-serif; font-weight: 700; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
                             Resources</h5>
                         <div class="d-flex justify-content-center flex-wrap">
-                            <a href="https://github.com/aimagelab/ReflectiVA" class="btn btn-outline-light m-2"
+                            <a href="https://github.com/akres001/Rethinking-Few-Shot-CLIP-Benchmarks-A-Critical-Analysis-in-the-Inductive-Setting" class="btn btn-outline-light m-2"
                                 style="border-radius: 30px; transition: all 0.3s; backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.5);">
                                 <i class="fab fa-github me-2"></i>GitHub
                             </a>
@@ -672,10 +656,6 @@
                             <a href="https://huggingface.co/aimagelab/ReflectiVA" class="btn btn-outline-light m-2"
                                 style="border-radius: 30px; transition: all 0.3s; backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.5);">
                                 <i class="fa fa-link"></i> Model
-                            </a>
-                            <a href="https://huggingface.co/datasets/aimagelab/ReflectiVA-Data" class="btn btn-outline-light m-2"
-                                style="border-radius: 30px; transition: all 0.3s; backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.5);">
-                                <i class="fa fa-database"></i> Dataset
                             </a>
                             
                         </div>
@@ -692,19 +672,8 @@
                     <h2 class="section-title">Abstract</h2>
                     <div class="abstract-box">
                         <p>
-                            Multimodal LLMs (MLLMs) are the natural extension of large language models to handle
-                            multimodal inputs, combining text and image data. They have recently garnered attention due
-                            to their capability to address complex tasks involving both modalities. However, their
-                            effectiveness is limited to the knowledge acquired during training, which restricts their
-                            practical utility. In this work, we introduce a novel method to enhance the adaptability of
-                            MLLMs by integrating external knowledge sources. Our proposed model, Reflective LLaVA
-                            (ReflectiVA), utilizes reflective tokens to dynamically determine the need for external
-                            knowledge and predict the relevance of information retrieved from an external database.
-                            Tokens are trained following a two-stage two-model training recipe. This ultimately enables
-                            the MLLM to manage external knowledge while preserving fluency and performance on tasks
-                            where external knowledge is not needed. Through our experiments, we demonstrate the efficacy
-                            of Reflectiva for knowledge-based visual question answering, highlighting its superior
-                            performance compared to existing methods.
+                            CLIP is a foundational model with transferable classification performance in the few-shot setting. Several methods have shown improved performance of CLIP using few-shot examples. However, so far all these techniques have been benchmarked using standard few-shot datasets. We argue that this mode of evaluation does not provide a true indication of the <strong>inductive</strong> generalization ability using few-shot examples. As most datasets have been seen by the CLIP model, the resultant setting can be termed as <strong>partially transductive</strong>. To solve this, we propose a pipeline that uses an unlearning technique to obtain true inductive baselines. In this new inductive setting, methods show a significant drop in performance (<strong>-55%</strong>} on average among 13 baselines with multiple datasets). We validate the unlearning technique using oracle baselines.
+                            An improved few-shot classification technique is proposed that consistently obtains state-of-the-art performance over 13 other recent baseline methods on a comprehensive analysis with 5880 experiments - varying the datasets, differing number of few-shot examples, unlearning setting, and with different seeds. Thus, we identify the issue with the evaluation of CLIP-based few-shot classification, provide a solution using unlearning, propose new benchmarks, and provide an improved method. All the models, code and baselines will be released on acceptance of the work.
                         </p>
                     </div>
                 </div>
