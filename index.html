@@ -656,7 +656,7 @@
                             </a>
                             <a href="https://huggingface.co/aimagelab/ReflectiVA" class="btn btn-outline-light m-2"
                                 style="border-radius: 30px; transition: all 0.3s; backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.5);">
-                                <i class="fa fa-link"></i> Model
+                                <i class="fa fa-link"></i> Checkpoints
                             </a>
                             
                         </div>
@@ -690,63 +690,70 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 animate-on-scroll">
-                    <h2 class="section-title">Proposed Method</h2>
+                    <h2 class="section-title">Problem definition and Contributions</h2>
                     <div class="row align-items-center">
                         <div class="col-lg-6 animate-on-scroll">
                             <div class="method-box"
                                 style="background-color: white; border-radius: 15px; padding: 2rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); margin-bottom: 2rem; border-left: 4px solid var(--secondary-color);">
                           
-                                <h2>Model Architecture</h2>
+                                <h2>Problem Definition</h2>
+
+                                <p> Existing few-shot learning methods achieve strong performance when evaluating on classes that are identical or highly similar to those seen during CLIP's pretraining. However, this represents an idealized evaluation scenario (partially transductive setting) that does not reflect real-world deployment conditions where we are interested to know the performance on truly novel classes (inductive setting). </p>
         
-                                <p>Extend model vocabulary with special reflective tokens:</p>
-                                <ul>
-                                    <li><code>[RET]</code>: External knowledge retrieval needed</li>
-                                    <li><code>[NORET]</code>: No external knowledge required</li>
-                                    <li><code>[REL]</code>: Retrieved items are relevant</li>
-                                    <li><code>[NOREL]</code>: Retrieved items are irrelevant</li>
-                                </ul>
-       
-                                    <h3>Two-Stage Training Process</h3>
+                                <!-- <p>A problem with the few-shot CLIP classification is identified. Existing few-shot CLIP classification methods are not evaluated using inductive benchmarks. The usual high performance for most methods is due to the partially transductive nature of evaluation. When evaluating state-of-the-art few-shot learning methods in the inductive setting
+                                the performance drops sharply as shown in the figure on the right. </p> -->
+
+                                <p> Since CLIP training data is not open-sourced, we cannot definitively determine which classes the model has never encountered. This creates a critical need for evaluation methodologies that can reliably benchmark few-shot performance on genuinely novel categories. Our work addresses this gap by developing a pipeline to emulate true unseen-class scenarios. </p>
+
+                                <p> We introduce a novel pipeline to obtain inductive benchmarks using unlearning. This way we can evaluate CLIP-based FSL methods inductively on any dataset. </p>
+
+                                
+
+       <!-- 
+                                <h3>Obtaining Inductive Evaluation Pipeline</h3>
+                                <p> </p> -->
+
+                    
+
+           <!--                      <h3>Inference Time</h3>
+                                <ol>
+                                    <li>
+                                        Assess need for external knowledge retrieval (emit <code>[RET]</code> or <code>[NORET]</code>)
+                                    </li>
+                                    <li>if <code>[RET]</code> then retrieve Wikipedia pages from external KB</li>
                                     <ul>
+                                        <li>Chunk each page in <i>N</i> passages</li>
                                         <li>
-                                            <strong>Stage 1:</strong> In-Article Discriminator
+                                            Classify relevance of each passage (mark with <code>[REL]</code> or <code>[NOREL]</code>)
                                         </li>
-                                        <li>
-                                            <strong>Stage 2:</strong> Reflective Token Training
-                                        </li>
+                                        <li>Generate answer using only <code>[REL]</code> passages</li>
                                     </ul>
-
-                        
-
-                                    <h3>Inference Time</h3>
-                                    <ol>
-                                        <li>
-                                            Assess need for external knowledge retrieval (emit <code>[RET]</code> or <code>[NORET]</code>)
-                                        </li>
-                                        <li>if <code>[RET]</code> then retrieve Wikipedia pages from external KB</li>
-                                        <ul>
-                                            <li>Chunk each page in <i>N</i> passages</li>
-                                            <li>
-                                                Classify relevance of each passage (mark with <code>[REL]</code> or <code>[NOREL]</code>)
-                                            </li>
-                                            <li>Generate answer using only <code>[REL]</code> passages</li>
-                                        </ul>
-                                        <li>if <code>[NORET]</code> then generate the answer</li>
-                                    </ol>
-  
+                                    <li>if <code>[NORET]</code> then generate the answer</li>
+                                </ol>
+   -->
 
                             </div>
                         </div>
                         <div class="col-lg-6 animate-on-scroll">
                             <div class="method-img text-center">
-                                <img src="static/paper/overview.png" alt="Architettura del Metodo"
+                                <img src="static/inductive_transd_scatter.png" alt="inductive vs transductive performance"
                                     class="img-fluid rounded shadow"
                                     style="max-width: 100%; transition: transform 0.3s; border: 1px solid rgba(0,0,0,0.1);">
-                                <p class="mt-3 text-center" style="font-size: 0.9rem; font-style: italic; color: #666;">
+                                <!-- <p class="mt-3 text-center" style="font-size: 0.9rem; font-style: italic; color: #666;">
                                     Overview of ReflectiVA, which employs reflective tokens for knowledge-based visual
                                     question answering. Our model learns to predict the need of retrieving data from an
                                     external knowledge source (top), classifies the relevance of each retrieved item
-                                    (middle) and generate the final answer based on relevant items (bottom).</p>
+                                    (middle) and generate the final answer based on relevant items (bottom).</p> -->
+                            </div>
+                            <div class="method-img text-center">
+                                <img src="static/pipeline.png" alt="inductive pipeline"
+                                    class="img-fluid rounded shadow"
+                                    style="max-width: 100%; transition: transform 0.3s; border: 1px solid rgba(0,0,0,0.1);">
+                                <!-- <p class="mt-3 text-center" style="font-size: 0.9rem; font-style: italic; color: #666;">
+                                    Overview of ReflectiVA, which employs reflective tokens for knowledge-based visual
+                                    question answering. Our model learns to predict the need of retrieving data from an
+                                    external knowledge source (top), classifies the relevance of each retrieved item
+                                    (middle) and generate the final answer based on relevant items (bottom).</p> -->
                             </div>
                         </div>
                     </div>
